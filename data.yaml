@@ -1,0 +1,8 @@
+
+path: archive-3
+
+train: images/train
+val: images/test
+
+names:
+  0: plate
