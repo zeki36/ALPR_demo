@@ -29,7 +29,7 @@ def get_box_coordinates(center_x, center_y, width, height, img_w, img_h):
     return x_min, y_min, x_max, y_max
 #---------------------------------------
 model1 = YOLO('yolov8n.pt')
-model2 = YOLO('plate_detector.pt')
+model2 = YOLO('plate_detector.pt') #kendi modelimiz
 
 train_images = []
 for s in os.listdir(OUTPUT_IMAGES_TRAIN):
@@ -107,3 +107,4 @@ xywh	Property (torch.Tensor)	Return the boxes in xywh format.
 xyxyn	Property (torch.Tensor)	Return the boxes in xyxy format normalized by original image size.
 xywhn	Property (torch.Tensor)	Return the boxes in xywh format normalized by original image size.
 '''
+
